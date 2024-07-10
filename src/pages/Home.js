@@ -34,7 +34,7 @@ const Home = () => {
     try {
       const res = await axios.get(`https://graph.facebook.com/v20.0/${pageId}/insights`, {
         params: {
-          metric: "page_fans,page_engaged_users,page_impressions,page_consumptions,page_reactions_by_type_total",
+          metric: "page_fans,page_engaged_users,page_impressions,page_reactions",
           since: since,
           until: until,
           period: period,
